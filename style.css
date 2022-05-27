@@ -54,19 +54,18 @@ h3 {
   font-weight: normal;
 }
 
-/* ----- NavBar ----- */
+/* ========================================
+NAV-BAR
+=========================================== */
+
 .navbar {
-  width: 100vw;
-  height: 10vh;
+  margin-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 12%;
 }
 
 .navbar_list {
   position: relative;
-  width: 664px;
-  height: 35px;
-
-  margin-top: 100px;
-  left: 10%;
 
   display: flex;
   flex-direction: row;
@@ -85,6 +84,10 @@ li a {
   text-transform: uppercase;
   color: black;
 }
+
+/* ========================================
+HERO_SECTION
+=========================================== */
 
 .hero-section {
   margin: 50px 20px;
@@ -148,6 +151,10 @@ li a {
 
   color: #ffffff;
 }
+
+/* ========================================
+ABOUT-SECTION
+=========================================== */
 
 .about-section {
   /* padding-bottom: 50px; */
@@ -234,6 +241,10 @@ li a {
   font-size: 3.5rem;
   color: #a3ca39;
 }
+
+/* ========================================
+WORK-SETION
+=========================================== */
 
 .work-section {
   margin-top: 50px;
@@ -350,21 +361,9 @@ li a {
   color: #a3ca39;
 }
 
-.rectangle-3 {
-  height: 400px;
-  width: 450px;
-  position: absolute;
-  right: 0.5%;
-  background: #a3ca39;
-}
-
-.rectangle-4 {
-  height: 3px;
-  width: 25px;
-  position: relative;
-  top: -5%;
-  background: #a3ca39;
-}
+/* ========================================
+ACHIEVENMENTS-SECTION
+=========================================== */
 
 .achievements-section h1 {
   font-size: 9.6rem;
@@ -397,6 +396,22 @@ li a {
 }
 .achievement4 {
   grid-area: 2 / 2 / 3 / 3;
+}
+
+.rectangle-3 {
+  height: 400px;
+  width: 450px;
+  position: absolute;
+  right: 0.5%;
+  background: #a3ca39;
+}
+
+.rectangle-4 {
+  height: 3px;
+  width: 25px;
+  position: relative;
+  top: -5%;
+  background: #a3ca39;
 }
 
 /* .gallery {
@@ -451,6 +466,10 @@ li a {
   grid-area: 3 / 2 / 4 / 3;
 } */
 
+/* ========================================
+HOBBIES-SECTION
+=========================================== */
+
 .hobbies {
   margin-top: 200px;
   padding-bottom: 100px;
@@ -496,6 +515,10 @@ li a {
   margin-top: 8px;
   vertical-align: middle;
 }
+
+/* ========================================
+CONTACT-SECTION
+=========================================== */
 
 .rectangle-7 {
   height: 300px;
