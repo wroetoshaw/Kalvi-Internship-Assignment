@@ -205,7 +205,10 @@ ABOUT-SECTION
 .grid-container {
   display: block;
   display: grid;
-  margin-top: 20px;
+  padding-top: 50px;
+  padding-left: 100px;
+  width: 120%;
+  /* margin-top: 20px; */
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
@@ -225,21 +228,34 @@ ABOUT-SECTION
 }
 
 .timeline-1 h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 800;
 }
 .timeline-2 h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 800;
 }
 
+.timeline-1 p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.timeline-2 p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
 .timeline-1 h3 {
-  font-size: 3.5rem;
+  font-size: 2.6rem;
+  font-weight: 800;
   color: #a3ca39;
+  line-height: 15px;
 }
 .timeline-2 h3 {
-  font-size: 3.5rem;
+  font-size: 2.6rem;
+  font-weight: 800;
   color: #a3ca39;
+  line-height: 15px;
 }
 
 /* ========================================
