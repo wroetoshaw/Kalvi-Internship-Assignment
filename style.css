@@ -15,9 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-section {
-  margin-bottom: 100px;
-}
 .box {
   padding: 1%;
 }
@@ -88,28 +85,33 @@ li a {
 }
 
 .hero-section {
-  width: 100vw;
-  height: 60vh;
-  margin-bottom: 100px;
+  margin: 50px 20px;
 }
 
 .profile-rectangle {
   position: absolute;
   width: 450px;
   height: 550px;
-  left: 55%;
+  left: 57%;
   top: 0%;
   z-index: 1;
   background: #a3ca39;
 }
 
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .profile-image {
+  display: inline;
   z-index: 10;
-  position: relative;
+  /* position: relative; */
   max-width: 100%;
   height: auto;
-  left: 60%;
-  top: 5%;
+  /* left: 60%;
+  top: 5%; */
 }
 
 .container {
@@ -121,9 +123,9 @@ li a {
   position: relative;
   width: 600px;
   height: auto;
-  top: -40%;
+  /* 
   left: 10%;
-  transform: translate(-10%, -50%);
+  transform: translate(-10%, -50%); */
 }
 
 .primary-btn {
@@ -142,9 +144,26 @@ li a {
 
 .about-section {
   /* padding-bottom: 50px; */
+  padding: 50px 0px;
+}
+
+.about-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "background-img grid-container .";
+}
+
+.background-img {
+  grid-area: background-img;
+}
+
+.grid-container {
+  grid-area: grid-container;
   width: 100%;
-  height: 360px;
-  margin-bottom: 50px;
+  height: 70%;
 }
 
 .background-image {
@@ -152,15 +171,16 @@ li a {
   position: absolute;
   width: 367px;
   height: 241px;
-  left: 0%;
+  /* left: 0%; */
 }
 
 .text-box-1 {
-  position: relative;
+  /* position: relative; */
   width: 200px;
   height: 400px;
-  left: 8%;
-  top: 3%;
+  padding: 0px 100px;
+  /* left: 8%;
+  top: 3%; */
 }
 
 .text-box-1 h1 {
@@ -168,19 +188,18 @@ li a {
 }
 
 .grid-container {
-  width: 35vw;
-  position: relative;
-  height: auto;
+  display: block;
   display: grid;
+  margin-top: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 10px;
 
-  left: 55%;
+  /* left: 55%;
   top: -70%;
 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .timeline-1 {
@@ -191,14 +210,12 @@ li a {
 }
 
 .timeline-1 h1 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 800;
-  margin-bottom: 15px;
 }
 .timeline-2 h1 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 800;
-  margin-bottom: 15px;
 }
 
 .timeline-1 h3 {
@@ -211,19 +228,36 @@ li a {
 }
 
 .work-section {
-  padding: 0;
+  margin-top: 50px;
 }
 
-.grid-work {
-  width: 80vw;
+.work-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 20px 150px;
+}
+
+.work-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.work {
+  padding-bottom: 50px;
+}
+
+/* .grid-work {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 80px;
   grid-row-gap: 20px;
-
-  position: relative;
-  left: 15%;
 }
 
 .work1 {
@@ -245,7 +279,7 @@ li a {
 }
 .work6 {
   grid-area: 2 / 3 / 3 / 4;
-}
+} */
 
 .work-section .main-heading {
   text-align: center;
@@ -259,7 +293,7 @@ li a {
   transform: translateX(-50%);
   font-size: 90%;
   text-align: center;
-  margin: 80px 0px;
+  padding: 50px 0;
   font-size: 1.8rem;
 }
 
@@ -288,19 +322,19 @@ li a {
   width: 300px;
 }
 
-.grid-work h1 {
+.work-flex h1 {
   font-size: 2.1rem;
   padding-left: 10px;
   margin-bottom: 0;
 }
 
-.grid-work p {
+.work-flex p {
   padding: 10px 10px;
   font-weight: bold;
   font-size: 1.6rem;
 }
 
-.grid-work a {
+.work-flex a {
   padding: 10px 10px;
   text-decoration: none;
   font-size: 1.8rem;
@@ -410,14 +444,14 @@ li a {
 
 .hobbies {
   margin-top: 200px;
+  padding-bottom: 100px;
 }
 
 .hobbies-textbox {
   position: absolute;
-  width: 350px;
+  width: 550px;
   height: 400px;
-  left: 8%;
-  margin-top: 150px;
+  padding: 175px 110px;
 }
 
 .hobbies-textbox h1 {
@@ -428,7 +462,6 @@ li a {
   font-size: 1.8rem;
 }
 .row {
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -437,7 +470,7 @@ li a {
 
   justify-content: center;
 
-  width: 44vw;
+  width: 50vw;
   height: auto;
 
   position: relative;
