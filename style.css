@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -88,6 +90,11 @@ li a {
   margin: 50px 20px;
 }
 
+.hero-section .sub-heading {
+  margin: 0px 0px;
+  font-weight: 500;
+  color: black;
+}
 .profile-rectangle {
   position: absolute;
   width: 450px;
@@ -185,6 +192,7 @@ li a {
 
 .text-box-1 h1 {
   font-size: 9.6rem;
+  line-height: 100px;
 }
 
 .grid-container {
@@ -364,6 +372,7 @@ li a {
   padding: 0.5em;
   padding-left: 0.5em;
   color: white;
+  line-height: 100px;
 }
 .grid-achievement {
   display: grid;
@@ -372,7 +381,7 @@ li a {
   grid-column-gap: 60px;
   grid-row-gap: 60px;
 
-  width: 35%;
+  width: 42%;
   position: relative;
   left: 7.5%;
 }
@@ -517,10 +526,10 @@ li a {
 }
 
 .contact .copyright {
-  position: absolute;
-  padding: 70px 50px;
-  margin: 100px 50px;
-  right: 5%;
+  float: right;
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-right: 100px;
 }
 
 .contact p {
